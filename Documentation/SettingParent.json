@@ -1,0 +1,133 @@
+{
+  "LoadFirstJoyStick": true,
+  "FirstJoyStringName": "",
+  "JoyStickPollRate": 50,
+  "JoyStickApplicationSettings": [
+    {
+      "JoyStickName": "SpaceNavigator",
+      "IsDefaultJoyStick": true,
+      "JoyStickApplications": [
+        {
+          "ApplicationName": "Substance Painter",
+          "VectorLock": true,
+          "ApplicationNameType": "Window",
+          "CommandSendRate": 10,
+          "SettingKeyValues": [
+            {
+              "Name": "X",
+              "MouseX": true,
+              "MouseY": false,
+              "MouseW": false,
+              "LeftClick": false,
+              "RightClick": false,
+              "Multiplier": -0.1,
+              "Value": null,
+              "Ctrl": false,
+              "Shift": false,
+              "Alt": true,
+              "IsKeySend": false,
+              "KeyChar": null,
+              "MiddleClick": true,
+              "DisabledAxis": false
+            },
+            {
+              "Name": "Y",
+              "MouseX": false,
+              "MouseY": false,
+              "MouseW": true,
+              "LeftClick": false,
+              "RightClick": false,
+              "Multiplier": 0.25,
+              "Value": null,
+              "Ctrl": false,
+              "Shift": false,
+              "Alt": false,
+              "IsKeySend": false,
+              "KeyChar": null,
+              "MiddleClick": false,
+              "DisabledAxis": false
+            },
+            {
+              "Name": "Z",
+              "MouseX": false,
+              "MouseY": true,
+              "MouseW": false,
+              "LeftClick": false,
+              "RightClick": false,
+              "Multiplier": -0.1,
+              "Value": null,
+              "Ctrl": false,
+              "Shift": false,
+              "Alt": true,
+              "IsKeySend": false,
+              "KeyChar": null,
+              "MiddleClick": true,
+              "DisabledAxis": false
+            },
+            {
+              "Name": "RotationX",
+              "MouseX": false,
+              "MouseY": true,
+              "MouseW": false,
+              "LeftClick": true,
+              "RightClick": false,
+              "Multiplier": -0.1,
+              "Value": null,
+              "Ctrl": false,
+              "Shift": false,
+              "Alt": true,
+              "IsKeySend": false,
+              "KeyChar": null,
+              "MiddleClick": false,
+              "DisabledAxis": false
+            },
+            {
+              "Name": "RotationY",
+              "MouseX": true,
+              "MouseY": false,
+              "MouseW": false,
+              "LeftClick": false,
+              "RightClick": false,
+              "Multiplier": 2.0,
+              "Value": null,
+              "Ctrl": false,
+              "Shift": true,
+              "Alt": false,
+              "IsKeySend": false,
+              "KeyChar": null,
+              "MiddleClick": false,
+              "DisabledAxis": true
+            },
+            {
+              "Name": "RotationZ",
+              "MouseX": true,
+              "MouseY": false,
+              "MouseW": false,
+              "LeftClick": true,
+              "RightClick": false,
+              "Multiplier": -0.1,
+              "Value": null,
+              "Ctrl": false,
+              "Shift": false,
+              "Alt": true,
+              "IsKeySend": false,
+              "KeyChar": null,
+              "MiddleClick": false,
+              "DisabledAxis": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "JoyStickName": "HIDI2C Device",
+      "IsDefaultJoyStick": false,
+      "JoyStickApplications": []
+    },
+    {
+      "JoyStickName": "3Dconnexion KMJ Emulator",
+      "IsDefaultJoyStick": false,
+      "JoyStickApplications": []
+    }
+  ]
+}

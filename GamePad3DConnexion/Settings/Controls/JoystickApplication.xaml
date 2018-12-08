@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="GamePad3DConnexion.Settings.Controls.JoystickApplication"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:GamePad3DConnexion.Settings.Controls"
+             mc:Ignorable="d"
+             BorderThickness="1"
+             BorderBrush="Black"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="45" />
+            <RowDefinition Height="45" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="45" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <TextBlock Text="Application command timer" Margin="5" />
+            <TextBox Text="{Binding ApplicationCommandTimer}" MinWidth="100" IsEnabled="{Binding IsEnabled}" Margin="5" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <TextBlock Text="Vector Lock?" Margin="5" />
+            <CheckBox IsChecked="{Binding ApplicationVectorLock}" IsEnabled="{Binding IsEnabled}" Margin="5" />
+        </StackPanel>
+        <DataGrid Margin="5" Grid.Row="2" Grid.ColumnSpan="2" CanUserAddRows="False"
+                  AutoGenerateColumns="False" ItemsSource="{Binding SettingKeyValues}" Name="SettingDataGrid">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Name" IsReadOnly="True">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name,UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Disabled" IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <CheckBox Grid.Column="0" IsChecked="{Binding DisabledAxis, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Modifiers" IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <CheckBox Content="Ctrl" Grid.Column="0" IsChecked="{Binding Ctrl, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                                <CheckBox Content="Shift" Grid.Column="1" IsChecked="{Binding Shift, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                                <CheckBox Content="Alt" Grid.Column="2" IsChecked="{Binding Alt, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Mouse Axis" IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <CheckBox Content="Left right" Grid.Column="0" IsChecked="{Binding MouseX, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                                <CheckBox Content="Up down" Grid.Column="1" IsChecked="{Binding MouseY, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                                <CheckBox Content="Wheel" Grid.Column="2" IsChecked="{Binding MouseW, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Mouse Button" IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <CheckBox Content="Left" Grid.Column="0" IsChecked="{Binding LeftClick, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                                <CheckBox Content="Right" Grid.Column="1" IsChecked="{Binding RightClick, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                                <CheckBox Content="Middle" Grid.Column="2" IsChecked="{Binding MiddleClick, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" />
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Multiplier" IsReadOnly="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding Multiplier,UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
