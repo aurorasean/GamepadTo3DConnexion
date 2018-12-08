@@ -1,4 +1,3 @@
 language: csharp
 solution: GamePad3DConnexion.sln
-mono: none
-dotnet: 2.0.0
+dotnet: 3.0.0
