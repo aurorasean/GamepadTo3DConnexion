@@ -2,11 +2,11 @@
 ### How to use
 * 1 Select your joystick/space mouse
 
-![JoyStiick](https://github.com/aurorasean/GamepadTo3DConnexion/blob/master/Documentation/SelectJoyStick.png)
+![JoyStick](https://github.com/aurorasean/GamepadTo3DConnexion/blob/master/Documentation/SelectJoyStick.PNG)
 
 * 2 Add an application partial title 'Application Window Title'
 
-![Application](https://github.com/aurorasean/GamepadTo3DConnexion/blob/master/Documentation/CaptureNewApplication.png)
+![Application](https://github.com/aurorasean/GamepadTo3DConnexion/blob/master/Documentation/CaptureNewApplication.PNG)
 
 * 3 Fill out the settings to match your Application
 
