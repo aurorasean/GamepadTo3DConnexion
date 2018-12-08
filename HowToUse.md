@@ -10,7 +10,7 @@
 
 * 3 Fill out the settings to match your Application
 
-![ApplicationSettings](/Documentation/ApplicationSettings.png)
+![ApplicationSettings](https://github.com/aurorasean/GamepadTo3DConnexion/blob/master/Documentation/ApplicationSettings.PNG)
 
 * 4 Press Save Settings
 
