@@ -2,15 +2,15 @@
 ### How to use
 * 1 Select your joystick/space mouse
 
-![JoyStiick](Documentation/SelectJoyStick.png)
+![JoyStiick](/Documentation/SelectJoyStick.png)
 
 * 2 Add an application partial title 'Application Window Title'
 
-![Application](Documentation/CaptureNewApplication.png)
+![Application](/Documentation/CaptureNewApplication.png)
 
 * 3 Fill out the settings to match your Application
 
-![ApplicationSettings](Documentation/ApplicationSettings.png)
+![ApplicationSettings](/Documentation/ApplicationSettings.png)
 
 * 4 Press Save Settings
 
