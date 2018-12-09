@@ -21,7 +21,11 @@
 
 If you don't want to go through the hassle of setting up the setting file then use the one in documentation [Setting.json](Documentation/SettingParent.json) and paste it in the Bin\Debug folder
 
-##### Application Settings
+##### Additional Setup in 3D Connexion
+
+Disable the axis input for the application you are targeting, or your application will get more than one input sent to it
+
+##### Application Settings Description
 
 Application command timer: How much to seperate the mouse commands being sent to the application \(Milliseconds\)
 
